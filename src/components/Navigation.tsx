@@ -24,14 +24,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 overflow-hidden flex items-center justify-center bg-primary">
-                  <img
-                    src={logoPs}
-                    alt="Logo"
-                    className="object-cover w-full h-full"
-                  />
-            </div>
-            <span className="font-bold text-xl text-foreground">Solide et solidaire</span>
+            <span className="font-bold text-xl text-foreground">Chateauneuf à venir</span>
           </Link>
 
           {/* Desktop Navigation */}

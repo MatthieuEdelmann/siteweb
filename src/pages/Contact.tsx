@@ -40,115 +40,42 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Contact Form */}
+          {/* Contact Information */}
+          <div className="space-y-8">
             <div className="bg-card border border-border rounded-lg p-8">
-              <h2 className="text-2xl font-bold mb-6 text-foreground">Envoyez-nous un message</h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2 text-foreground">
-                    Nom complet *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2 text-foreground">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium mb-2 text-foreground">
-                    Sujet *
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    required
-                    value={formData.subject}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2 text-foreground">
-                    Message *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    required
-                    rows={6}
-                    value={formData.message}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none"
-                  />
-                </div>
-
-                <Button type="submit" className="w-full" size="lg">
-                  <Send className="mr-2 h-5 w-5" />
-                  Envoyer le message
-                </Button>
-              </form>
-            </div>
-
-            {/* Contact Information */}
-            <div className="space-y-8">
-              <div className="bg-card border border-border rounded-lg p-8">
-                <h2 className="text-2xl font-bold mb-6 text-foreground">Nos coordonnées</h2>
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-6 h-6 text-primary-foreground" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold mb-1 text-foreground">Email</h3>
-                      <p className="text-muted-foreground">contact@ensemble-france.fr</p>
-                    </div>
+              <h2 className="text-2xl font-bold mb-6 text-foreground">Nos coordonnées</h2>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-6 h-6 text-primary-foreground" />
                   </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-primary-foreground" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold mb-1 text-foreground">Téléphone</h3>
-                      <p className="text-muted-foreground">+33 1 23 45 67 89</p>
-                    </div>
+                  <div>
+                    <h3 className="font-semibold mb-1 text-foreground">Email</h3>
+                    <p className="text-muted-foreground">Chateauneufà venir@hotmail.com</p>
                   </div>
+                </div>
 
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-6 h-6 text-primary-foreground" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold mb-1 text-foreground">Adresse</h3>
-                      <p className="text-muted-foreground">
-                        123 Boulevard de la République<br />
-                        75011 Paris<br />
-                        France
-                      </p>
-                    </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-primary-foreground" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-1 text-foreground">Téléphone</h3>
+                    <p className="text-muted-foreground">07 69 14 50 37</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-primary-foreground" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-1 text-foreground">Adresse</h3>
+                    <p className="text-muted-foreground">
+                      73 Plage du Jai<br />
+                      13220 Châteauneuf les martigues<br />
+                      France
+                    </p>
                   </div>
                 </div>
               </div>

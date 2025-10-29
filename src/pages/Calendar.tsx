@@ -9,7 +9,7 @@ const Calendar = () => {
       time: "19h00",
       title: "Grand Meeting Public",
       location: "Palais des Congrès, Paris",
-      description: "Venez découvrir nos propositions pour l'avenir de la France",
+      description: "Venez découvrir nos propositions pour l'à venir de la France",
       type: "meeting",
     },
     {
@@ -31,7 +31,7 @@ const Calendar = () => {
     {
       date: "5 Décembre 2024",
       time: "20h00",
-      title: "Conférence: L'Avenir du Travail",
+      title: "Conférence: L'à venir du Travail",
       location: "Bourse du Travail, Paris",
       description: "Discutons des mutations du monde du travail et de nos propositions",
       type: "conference",

@@ -1,31 +1,37 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
+import gallery1 from "@/assets/IMG_20251024_010441.jpg";
+import gallery2 from "@/assets/IMG_20251024_010443.jpg";
+import gallery3 from "@/assets/IMG_20251024_010449.jpg";
+import gallery4 from "@/assets/IMG_20251024_010452.jpg";
+import gallery5 from "@/assets/IMG_20251024_010455.jpg";
 
 const Gallery = () => {
   const images = [
     {
       src: gallery1,
-      title: "Meeting de campagne",
-      description: "Rassemblement populaire à Paris - Mars 2024",
+      title: "Marie-Arlette Carlotti",
+      description: "Senateur PS Marseille",
     },
     {
       src: gallery2,
-      title: "Rencontre citoyenne",
-      description: "Échange avec les habitants - Février 2024",
+      title: "Jeremy Bacchi",
+      description: "Senateur PCF Marseille",
     },
     {
       src: gallery3,
-      title: "Équipe de campagne",
-      description: "Nos militants engagés - Janvier 2024",
+      title: "Jerôme Guedj",
+      description: "Député PS",
     },
     {
       src: gallery4,
-      title: "Débat public",
-      description: "Conférence sur la transition écologique - Décembre 2023",
+      title: "Carole Delga",
+      description: "Presidente PS région Occitanie",
+    },
+    {
+      src: gallery5,
+      title: "Journée rencontre et échanges",
+      description: "Parc Francois Mitterrand, Châteauneuf les Martigues",
     },
   ];
 
@@ -53,7 +59,7 @@ const Gallery = () => {
                 <img 
                   src={image.src} 
                   alt={image.title}
-                  className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-80 object-cover object-top group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">

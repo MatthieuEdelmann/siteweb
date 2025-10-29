@@ -24,7 +24,7 @@ const Index = () => {
             Ensemble pour une France plus juste
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8">
-            Construisons ensemble l'avenir que nous méritons tous
+            Construisons ensemble l'à venir que nous méritons tous
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/program">
@@ -89,7 +89,7 @@ const Index = () => {
             Rejoignez le Mouvement
           </h2>
           <p className="text-xl text-white/90 mb-8">
-            Ensemble, nous pouvons faire la différence. Participez à nos événements, découvrez nos propositions et engagez-vous pour l'avenir.
+            Ensemble, nous pouvons faire la différence. Participez à nos événements, découvrez nos propositions et engagez-vous pour l'à venir.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/calendar">
